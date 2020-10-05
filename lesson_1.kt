@@ -1,5 +1,5 @@
 fun main() {
-  println("Hello World"); // セミコロンはあってもなくてもいい？
+    println("Hello World"); // セミコロンはあってもなくてもいい？
 }
 
 /*
@@ -13,9 +13,9 @@ fun main() {
 // vel => 再代入できない (多い)
 // ver => 再代入できる
 fun main(args: Array<String>) {
-  // val msg: String = "Hello World"
-	val msg = "Hello World" // 型推論(上の行の省略形)
-	println(msg)
+    // val msg: String = "Hello World"
+    val msg = "Hello World" // 型推論(上の行の省略形)
+    println(msg)
 }
 
 
