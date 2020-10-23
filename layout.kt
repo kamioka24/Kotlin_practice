@@ -1,5 +1,9 @@
-// xmlファイル内で使用する主要コードの使い方例
+// xmlファイル内で使用する主要コードの使い方例(メモ)
 // すべて頭に android: が付く。
+
+// 主な使用タグ
+// <RelativeLayout> <LinearLayout> <ImageView> <TextView> <Button>
+
 
 ・layout_with = "200dp"
 ・layout_heigth = "300dp"
@@ -18,3 +22,10 @@
 
 ・layout_marginTop = "50dp"  -- 上から50dp離す
 　他にもmarginBottom, marginLeft, marginRightなどがある
+
+
+・scr = "場所/ファイル名"  -- 画像
+・background = "場所/ファイル名"  -- 背景画
+
+
+・scaleType = "fitXY"
