@@ -1,25 +1,45 @@
-// Main_Activityファイルの決まり文句的なもの
-package com.example.singleviewapplication
+// if文---------------------------------------
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+var str = "大吉"
+val rnd = Random
+val number = rnd.nextInt(5) // 0 ~ 4
+if (number == 0) {
+    str = "中吉"
+}
+else if (number == 1) {
+    str = "吉"
+}
+else if (number == 2) {
+    str = "凶"
+}
+else if (number == 3) {
+    str = "大凶"
+}
+else {
+    str = "大吉" // 必要なければ省略可能
 }
 
 
-// valuesフォルダーのstringファイルでテキストなどを変更できる(例)
-<resources>
-    <string name="app_name">Single View Application</string>
-    <string name="win_text">Win!</string>
-    <string name="lose_text">Lose!</string>
-    <string name="draw_text">Draw!</string>
-    <string name="gu">グー</string>
-    <string name="choki">チョキ</string>
-    <string name="per">パー</string>
-    <string name="open">Open</string>
-</resources>
+// when文-------------------------------------
+
+when (number) {
+    0 -> str = "中吉"
+    1 -> str = "吉"
+    2 -> str = "凶"
+    3 -> str = "大凶"
+    else -> str = "大吉" // 必要なければ省略可能
+}
+
+
+// if文とwhen文は『式』としても使える-----------------
+
+val str = if (number == 0) {"吉"} else {"凶"}
+// numberが0なら吉、そうでなければ凶
+
+val str = when (number) {
+    0 -> "吉"
+    1 -> "凶"
+    else -> "大吉"
+} // numberが0なら吉、1なら凶、それ以外なら大吉
+
+// ※ 両方とも『式として用いる場合』は必ず値を返す必要がある為、elseは省略できない。
