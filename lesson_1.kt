@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
 
 
 // データ型
-/* 
+/*
 <<文字列>> String, Char
 Stringは " " で囲む          val s = "Hello"
 Charは ' ' で囲む            val c = 'World'
