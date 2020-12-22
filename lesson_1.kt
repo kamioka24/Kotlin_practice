@@ -1,5 +1,6 @@
+// 基本構文
 fun main() {
-    println("Hello World"); // セミコロンはあってもなくてもいい？
+    println("Hello World")
 }
 
 /*
