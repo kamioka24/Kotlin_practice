@@ -28,3 +28,22 @@ fun main() {
 	val randomNumber = diceRange.random()
     println("Ramdom number: ${randomNumber}")
 }
+
+
+// サイコロアプリ(例) ---------------------------------------
+
+fun main() {
+    val myFirstDice = Dice()
+    println(myFirstDice.sides)
+    myFirstDice.roll()
+}
+
+class Dice {
+    var sides = 6 // 面の数を指定
+
+    fun roll() {
+        val randomNumber = (1..6).random()
+        println(randomNumber)
+    }
+}
+// => 1行目に面の数が出力され、2行目に面の数以下の数字がランダムに出力される
