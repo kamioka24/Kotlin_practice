@@ -11,8 +11,8 @@ fun main() {
 
 
 // 変数
-// vel => 再代入できない (多い)
-// ver => 再代入できる
+// vel => 定数 (再代入できない)
+// ver => 変数 (再代入できる)
 fun main(args: Array<String>) {
     // val msg: String = "Hello World"
     val msg = "Hello World" // 型推論(上の行の省略形)

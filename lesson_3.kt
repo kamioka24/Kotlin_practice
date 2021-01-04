@@ -19,3 +19,12 @@ val str = omikujiShelf[number]
 // イテレータブルなオブジェクト => 配列のように順番にアクセスできるもの
 val array = arrayOf("a", "b", "c", "d", "e")
 for(i in array) println(i)
+
+
+// ランダム関数使用例 ---------------------------------------
+
+fun main() {
+	val diceRange = 1..6 // 1 ~ 6
+	val randomNumber = diceRange.random()
+    println("Ramdom number: ${randomNumber}")
+}
