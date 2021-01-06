@@ -47,3 +47,21 @@ class Dice {
     }
 }
 // => 1行目に面の数が出力され、2行目に面の数以下の数字がランダムに出力される
+
+
+// サイコロアプリ(例2) --------------------------------------
+
+fun main() {
+    val myFirstDice = Dice()
+    val diceRoll = myFirstDice.roll()
+    println("${myFirstDice.sides}面のサイコロを振って、${diceRoll}が出た！")
+}
+
+class Dice {
+    var sides = 8
+
+    fun roll(): Int {
+        val randomNumber = (1..sides).random()
+        return randomNumber
+    }
+}
