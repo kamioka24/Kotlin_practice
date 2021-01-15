@@ -33,6 +33,19 @@ Activityが破壊されるときにデータを保存しておいて、取り出
 */
 
 
+
+setImageResource()
+/*
+指定したリソースの画像を表示するメソッド
+*/
+
+
+onButtonClick()
+/*
+ボタンタグをクリックした際の処理を実行する
+*/
+
+
 setOnClickListener
 /*
 クリック時に処理する動作を定義する
