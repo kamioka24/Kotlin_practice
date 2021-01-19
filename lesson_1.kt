@@ -22,7 +22,6 @@ fun main(args: Array<String>) {
 
 
 // 【データ型】
-
 <<文字列>> String, Char
 Stringは " " で囲む          val s = "Hello"
 Charは ' ' で囲む            val c = 'World'
@@ -37,6 +36,14 @@ val d: Double = 123.456
 
 Boolean (true / false)
 val flag: Boolean = true
+
+// 暗黙の型変換はできないがメソッドを使えば型変換できる
+val int: Int = 1234
+val long: Long = int // => error
+
+val int: Int = 1234
+val long: Long = int.toLong() // => 1234
+// .toInt() や .toString() などで型変換が可能に！
 
 
 // 【null typeとnone null type】
