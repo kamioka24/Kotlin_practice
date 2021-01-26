@@ -33,6 +33,40 @@ Activityが破壊されるときにデータを保存しておいて、取り出
 */
 
 
+savaData()
+/*
+データの格納をする際に使用するメソッド
+()内に引数: データ型を記述
+*/
+
+
+getDefaultSharedPreferences()
+/*
+デフォルトの共有プリファレンスを取得する
+*/
+
+
+getInt()
+/*
+設定項目をInt型で取得する
+()内に、取り出したい設定項目の名前: 値(設定項目が未設定の場合にはこの値を返す) を記述
+この他にも getString や getBoolean などがある
+*/
+
+
+putInt()
+/*
+設定項目にInt型の値を書き込む
+()内に、書き込みたい設定項目の名前: 書き込む値 を記述
+この他にも putString や putBoolean などがある
+*/
+
+
+apply(), commit()
+/*
+データの保存
+*/
+
 
 setImageResource()
 /*
