@@ -8,6 +8,7 @@ print    ->  改行なし
 println  ->  改行あり
 
 
+
 // 【定数と変数】
 vel -> 定数 (再代入できない)
 constをつけることで定義
@@ -19,6 +20,7 @@ fun main(args: Array<String>) {
     val msg = "Hello World" // 型推論(上の行の省略形)
     println(msg)
 }
+
 
 
 // 【データ型】
@@ -46,6 +48,7 @@ val long: Long = int.toLong() // => 1234
 // .toInt() や .toString() などで型変換が可能に！
 
 
+
 // 【null typeとnone null type】
 // できるだけnone null typeを使う
 var a: String = "abc"  // none null type
@@ -57,9 +60,11 @@ a = null               // 代入できる
 val l = a.length       // nullチェックしていないためエラーが出る。(a!!.lengthにすればできる)
 
 
+
 // 【nullなら実行しない安全呼び出し】
 val thread: Thread? = null
 thread?.start() // -> 何も起こらない
+
 
 
 // 【nullの代替値】
@@ -67,6 +72,7 @@ textView.setText(name?: "no name")
 
 // dataがnullになるならreturnする
 val data = Hoge.getData ?: return
+
 
 
 // 【raw string】
