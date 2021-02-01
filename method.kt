@@ -74,6 +74,12 @@ clear()
 */
 
 
+Math.random() // Javaの標準ライブラリのAPI。
+/*
+擬似乱数を返す
+*/
+
+
 setImageResource()
 /*
 指定したリソースの画像を表示するメソッド
