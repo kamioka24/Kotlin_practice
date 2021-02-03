@@ -74,6 +74,23 @@ clear()
 */
 
 
+replace()
+/*
+文字列の置き換え。
+("古い文字列”, "置き換える文字列")
+*/
+
+
+contains()
+/*
+コンテンツに〇〇が含まれるか否かを判定。
+("文字列の指定")
+*/
+val text = "頑張ろう、日本！"
+val message = (text.contains("日本")
+println(message) // => true
+
+
 Math.random() // Javaの標準ライブラリのAPI。
 /*
 擬似乱数を返す
