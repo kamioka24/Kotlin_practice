@@ -91,6 +91,12 @@ val message = (text.contains("日本")
 println(message) // => true
 
 
+indexOf()
+/*
+文字列から特定の文字を検索する
+*/
+
+
 Math.random() // Javaの標準ライブラリのAPI。
 /*
 擬似乱数を返す
