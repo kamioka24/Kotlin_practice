@@ -106,7 +106,7 @@ Math.random() // Javaの標準ライブラリのAPI。
 setImageResource()
 /*
 指定したリソースの画像を表示するメソッド
-画像のリソースIDは R.drawable.画像ファイル名
+使い方は ()内に R.drawable.画像ファイル名 や、関数を入れることもできる
 */
 
 
