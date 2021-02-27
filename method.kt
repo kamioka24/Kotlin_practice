@@ -113,12 +113,15 @@ setImageResource()
 setBackgroundColor()
 /*
 指定した背景色を表示
+こちらの場合はデフォルトである色の指定のみ(Color.BLACK)など
+setBackgroundResourceとの違いに注意
 */
 
 
 setBackgroundResource()
 /*
 指定した背景画像を表示
+xmlファイルにて指定した色に変更する場合にも使用できる(R.color.〇〇)
 */
 
 
