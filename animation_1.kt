@@ -18,3 +18,7 @@ Handler().postDelayed(Runnable {
     alphaFadeOut.fillAfter = true // 動作後そのまま
     ID名.startAnimation(alphaFadeOut) // アニメーションスタート
 }, 500) // 開始時間(〇〇秒後)
+
+
+
+// 要素の回転
