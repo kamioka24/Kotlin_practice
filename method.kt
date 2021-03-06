@@ -131,9 +131,26 @@ onButtonClick()
 */
 
 
-setOnClickListener
+setOnClickListener()
 /*
 クリック時に処理する動作を定義する
+*/
+
+
+findNavController()
+/*
+フラグメントのナビゲーション使用時に、遷移先を指定する際に使用
+*/
+
+
+navigateUp()
+/*
+*/
+
+
+setupWithNavController()
+/*
+ナビゲーション・ドロワー(ナビゲーションメニュー)を表示できるようにする際に呼び出す
 */
 
 
