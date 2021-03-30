@@ -20,5 +20,22 @@ Handler().postDelayed(Runnable {
 }, 500) // 開始時間(〇〇秒後)
 
 
+// 点滅アニメーション
+ObjectAnimator.ofFloat(ImageViewなどのid, "alpha", 1.0f, 0.0f).apply {
+    repeatCount = ObjectAnimator.INFINITE  // 無限に繰り返す
+    repeatMode = ObjectAnimator.REVERSE  // 逆方向に繰り返す
+    duration = 1000
+    start()
+}
+ObjectAnimator.ofFloat(ImageViewなどのid, "alpha", 0.0f, 1.0f).apply {
+    repeatCount = ObjectAnimator.INFINITE  // 無限に繰り返す
+    repeatMode = ObjectAnimator.REVERSE  // 逆方向に繰り返す
+    duration = 1000
+    start()
+}
+
+// ※ View.INVISIBLE でモチーフを隠すと点滅が始まらない。xmlファイルにてandroid:alpha="0.0" にして隠すとできる
+
+
 
 // 要素の回転
