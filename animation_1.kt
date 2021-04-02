@@ -39,3 +39,7 @@ ObjectAnimator.ofFloat(ImageViewなどのid, "alpha", 0.0f, 1.0f).apply {
 
 
 // 要素の回転
+val objectAnimator = ObjectAnimator.ofFloat(topSeeThroughTouch, “rotation”, 2500f)
+objectAnimator.duration = 10000
+objectAnimator.repeatCount = -1
+objectAnimator.start()
