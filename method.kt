@@ -125,6 +125,14 @@ xmlファイルにて指定した色に変更する場合にも使用できる(R
 */
 
 
+findNavController()
+/*
+使い方 例 (フラグメント、ナビゲーション)
+view.findNavController().navigate(R.id.action_gameFragment_to_gameOverFragment)
+あるフラグメントから別のフラグメントへの遷移の指定
+*/
+
+
 onButtonClick()
 /*
 ボタンタグをクリックした際の処理を実行する
