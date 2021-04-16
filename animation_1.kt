@@ -13,11 +13,19 @@ Handler().postDelayed( {
 
 // フェードアウト(フェードイン)
 Handler().postDelayed(Runnable {
-    val alphaFadeOut = AlphaAnimation(1.0f, 0.0f) // 透明度1.0 -> 0.0へ (つまりフェードアウト)
+    val alphaFadeOut = AlphaAnimation(1.0f, 0.0f)
     alphaFadeOut.duration = 1500 // 動作している時間
     alphaFadeOut.fillAfter = true // 動作後そのまま
     ID名.startAnimation(alphaFadeOut) // アニメーションスタート
 }, 500) // 開始時間(〇〇秒後)
+
+// パート2
+android.os.Handler().postDelayed( Runnable {
+    val alphaFadeIn = AlphaAnimation(0.0f, 1.0f)
+    alphaFadeIn.setDuration(800)
+    alphaFadeIn.setFillAfter(true)
+    ID名.startAnimation(alphaFadeIn)
+}, 100)
 
 
 // 点滅アニメーション
