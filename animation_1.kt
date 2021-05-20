@@ -28,6 +28,7 @@ android.os.Handler().postDelayed( Runnable {
 }, 100)
 
 
+
 // 点滅アニメーション
 ObjectAnimator.ofFloat(ImageViewなどのid, "alpha", 1.0f, 0.0f).apply {
     repeatCount = ObjectAnimator.INFINITE  // 無限に繰り返す
@@ -51,3 +52,31 @@ val objectAnimator = ObjectAnimator.ofFloat(topSeeThroughTouch, “rotation”, 
 objectAnimator.duration = 10000
 objectAnimator.repeatCount = -1
 objectAnimator.start()
+
+
+
+// 移動アニメーション (いろいろな方向へ使える)
+
+// 例
+CommonMethods.deplayProcess(800) { // アニメーション開始時間
+    val moveDistance = Point(
+        childView.width - 130,
+        0 - (childView.height - 80)
+    )
+
+    val animX = ObjectAnimator.ofFloat(
+        childView,
+        "translateX",
+        moveDistance.x.toFloat()
+    )
+    animX.duration = 500 // X軸の移動スピード
+    animX.start()
+
+    val animY = ObjectAnimator.ofFloat(
+        childView,
+        "translateY",
+        moveDistance.y.toFloat()
+    )
+    animY.duration = 500 // Y軸の移動スピード
+    animY.start()
+}
