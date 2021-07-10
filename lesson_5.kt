@@ -66,7 +66,7 @@ fun main() {
 // 6.0
 
 // もし戻り値をひとつしか使わない場合は...
-  // val (sum, _) = getSumAverage(2, 3, 9, 10) と書ける。
+// val (sum, _) = getSumAverage(2, 3, 9, 10) と書ける。(必要なければ不本意に使わぬよう、_ を使用する。)
 
 fun getSumAverage(vararg values: Int): Pair<Int, Double> { // Pair を使うことで戻り値を2つ持てる。(3つのときは Triple)
     var result = 0
