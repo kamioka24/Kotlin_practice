@@ -6,12 +6,12 @@ fun main() {
     println(allSum(3, 9, 4, 12, 20))
 }
 
-fun allSum(vararg values: Int): Int { // vararg によって、引数を複数指定することが可能(任意数)
-    var result = 0
-    for (value in values) {
-        result += value
+fun allSum(vararg scores: Int): Int { // vararg によって、引数を複数指定することが可能(任意数)
+    var scoreSum = 0
+    for (score in scores) {
+        scoreSum += score
     }
-    return result
+    return scoreSum
 }
 // 48
 
